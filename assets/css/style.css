@@ -1,0 +1,15 @@
+:root {}
+
+#grad {
+  display: flex;
+  background-image: linear-gradient(to right, rgb(47, 148, 243), rgba(66, 0, 190, 0.903));
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: white;
+}
+
+.headHeight {
+  height: 70px;
+}
