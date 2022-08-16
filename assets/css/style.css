@@ -13,3 +13,17 @@
 .headHeight {
   height: 70px;
 }
+
+.btn {
+  border: 2px solid rgb(80, 80, 251);
+  background-color: rgb(195, 187, 187);
+}
+
+.btn:hover {
+  background-color: grey;
+}
+
+.selectField {
+  margin-left: 25px;
+  margin-top: 40px;
+}
