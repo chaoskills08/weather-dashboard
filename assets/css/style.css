@@ -27,3 +27,16 @@
   margin-left: 25px;
   margin-top: 40px;
 }
+
+#todayCard {
+  display: flex;
+  justify-content: center;
+}
+
+.noBorder {
+  border: none;
+}
+
+/* #cityCard {
+  justify-content: center;
+} */
