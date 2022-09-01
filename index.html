@@ -8,40 +8,31 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Document</title>
+  <title>Weather Dashboard</title>
 </head>
 
 <body>
   <header class="container-fluid headHeight" id="grad">Weather Dashboard</header>
-
+<div class="row">
   <div class="selectField">
-    <h2>Please type in a city.</h2>
-    <div>
-      <input name="city" id="city" type="text" autofocus="true" class="form-input" />
-      <button type="submit" class="btn">Select city</button>
+      <h2>Please type in a city.</h2>
+      <form class="form-inline sEdit sForm">
+        <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+        <button type="submit" class="btn mb-2">Select city</button>
+      </form>
+      
     </div>
   </div>
+  <div class="flex center noWeather" id="today"></div>
 
-  <div>
-    <div>
-      <div>
-        <h1 id="cityName"></h1>
-      </div>
-    </div>
-  </div>
+<div class="row">
+  <div id="lastCity" class="col-3"></div>
+  <div id="fiveDay" class="col-7 cardRow"></div>
+</div>
 
-  <div id="todayCard">
-    <div class="card noBorder" style="width: 18rem;">
-      <div class="card-header noBorder" id="cityCard">
-        <h2></h2>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item noBorder" id="li1"></li>
-        <li class="list-group-item noBorder" id="li2"></li>
-        <li class="list-group-item" id="li3"></li>
-      </ul>
-    </div>
-  </div>
+<div class="d-flex" id="futureCast"></div>
+
+
   <script src="./assets/js/script.js"></script>
 
 </body>
